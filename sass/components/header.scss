@@ -1,0 +1,117 @@
+@import "../utils/mixins.scss";
+
+#header{
+	@include flex-container(center, center);
+	background-color: #ffffff;
+	padding: 24px;
+	border-bottom: 1px solid #ececec;
+}
+ 
+.nav{
+	margin: 0;
+	padding: 0;
+}
+
+.header{
+	&__webstudio-logo{
+		@include text-weight-size(700, 26px);
+		font-family: 'raleway';
+		padding-right: 93px;
+		padding-left: 191px;
+		margin: 0;
+	}
+
+	&__webstudio{
+		color:var(--logo-link-txt-cl);
+		list-style: none;
+	}
+
+	&__menu{
+		@include text-weight-size(500, 14);
+		padding-right: 344px;
+		padding-left: 0px;
+		margin: 0;
+		display: flex;
+		letter-spacing: 0.02em;
+		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	&__color-link{
+		color: #2196F3;
+	}
+
+		
+	&__menu > &__item:not(:last-child){
+		margin-right: 50px;
+	}
+
+	&__contact{
+		@include text-weight-size(500, 14px);
+		margin: 0;
+		letter-spacing: 0.02em;
+		padding-right: 195px;
+		padding-left: 0px;
+		@include flex-container(center, center);
+		color: var(--secondary-txt-cl);
+		gap: 30px;
+	}
+
+	&__link1{
+		display: inline-flex;
+		align-items: center;
+		fill: var(--secondary-txt-cl);
+	}
+
+	&__icon-phone{
+		@include w-h(12px, 16px);
+		margin-right: 10px;
+	}
+
+	&__icon-letter{
+		@include w-h(16px, 12px);
+		margin-right: 10px;
+	}
+
+	&__contact > &__item-contact:not(:last-child){
+		margin-right: 50px;
+}
+
+}
+
+.header__link1:hover,
+.header__link1:focus {
+  color: var(--btn-primary-bg-cl);
+  fill: var(--btn-primary-bg-cl);
+}
+
+.header__linked::after {
+	content: "";
+	@include position-top-left(relative, 30px, 0);
+	bottom: 0;
+	display: block;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	/* background-image: url(../images/icons.svg#icon-hover-header-line);
+	fill: #2196f3; */
+	@include w-h(100%, 4px);
+	opacity: 0;
+	background-color: var(--btn-primary-bg-cl);
+	border-radius: 2px;
+  }
+  
+.header__linked:hover::after {
+	opacity: 1;
+}
+
+.header__linked2::after {
+	content: "";
+	@include position-top-left(relative, 30px, 0);
+	bottom: 0;
+	display: block;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	/* background-image: url(../images/icons.svg#icon-hover-header-line);
+	fill: #2196f3; */
+	@include w-h(100%, 4px);
+	opacity: 1;
+	background-color: var(--btn-primary-bg-cl);
+	border-radius: 2px;
+  }

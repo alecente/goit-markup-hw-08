@@ -1,0 +1,86 @@
+@import "../utils/mixins.scss";
+
+#team{
+	padding-top: 94px;
+	padding-bottom: 94px;
+	background-color: var(--seconday-bg-cl);
+}
+
+
+.team{
+		&__title{
+			@include text-height-spacing-family(42px, 0.03em);
+			text-align: center;
+			margin:0;
+			margin-bottom: 50px;
+		}
+
+		&__list{
+			display: flex;
+			justify-content: space-between;
+			max-width: 1170px;
+			gap: 37px; 
+			padding-left: 0;
+			margin: 0;
+		}
+
+		&__card{
+			background-color: #ffffff;
+			box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+			border-radius: 0px 0px 4px 4px;
+			max-width: 260px;
+		}
+
+		&__image{
+			width: 260px;
+		}
+
+
+		&__name{
+			@include text-weight-size(500);
+			line-height: 19px;
+			text-align: center;
+		}
+
+		&__charge{
+			@include text-weight-size(400);
+			line-height: 19px;
+			text-align: center;
+			letter-spacing: 0.03em;
+			color: #757575;
+		}
+
+		&__social{
+			display: flex;
+			justify-content: center;
+			gap: 10px;
+			padding-left: 0px;
+			padding-bottom: 30px;
+		}
+
+		
+		&__link {
+			@include flex-container(center, center);
+			@include w-h(44px, 44px);
+			border-radius: 50%;
+		}
+
+		&__link:hover,
+		&__link:focus {
+			background-color: var(--btn-primary-bg-cl);
+		}
+
+		
+		&__link:hover .team__logo-social,
+		&__link:focus .team__logo-social {
+			fill: var(--seconday-bg-cl);
+		}
+
+
+		&__logo-social {
+			@include w-h(20px, 20px);
+			fill: #afb1b8;
+		}
+
+	
+}

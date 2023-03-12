@@ -1,0 +1,47 @@
+#advantages{
+	padding-top: 82px;
+	padding-bottom: 60px;
+}
+
+.advantages{
+		&__list{
+			grid-template-columns: repeat(4,1fr);
+			grid-gap: 30px;
+			display: grid;
+			flex-basis: calc((100% - 90px) / 4);
+			padding-left: 0px;
+		}
+
+		&__item{
+			margin: 0;
+			padding-left: 0px;
+		}
+
+		&__card{
+			@include flex-container(center, center);
+			height: 120px;
+			margin-bottom: 30px;
+			background-color: var(--seconday-bg-cl);
+		}
+
+		&__title{
+			@include text-height-spacing-family('', 0.03em);
+			@include text-weight-size (700, 14px);
+			text-transform: uppercase;
+			margin:0;
+			display: flex;
+			justify-content: space-between;
+			gap: 30px;
+		}
+
+		&__icon{
+			@include w-h(70px, 70px);
+		}
+
+		&__text{
+			@include text-height-spacing-family(171%, 0.03em);
+			@include text-weight-size(400, 14px);
+			color: var(--secondary-txt-cl);
+		}
+
+}

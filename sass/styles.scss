@@ -1,0 +1,62 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700;1,900&display=swap");
+@import "./components/header";
+@import "./components/advantages";
+@import "./components/clients.scss";
+@import "./components/footer.scss";
+@import "./components/function.scss";
+@import "./components/header.scss";
+@import "./components/solution.scss";
+@import "./components/team.scss";
+@import "./components/portafolio.scss";
+@import "./components/modalstart.scss";
+@import "./utils/mixins.scss";
+@import "./utils/variables.scss";
+
+
+
+
+
+body{
+    margin: 0;
+	font-family: 'roboto';
+	background-color: #ffffff;
+	color:var(--primary-txt-cl);
+	overflow-x: hidden;
+}
+
+a:link, a:visited{
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover{ 
+	text-decoration: none;
+	color: var(--logo-link-txt-cl);
+}
+
+ul{
+	list-style: none;
+}
+
+h1{
+	font-weight: 900;
+	font-size: 44px;
+}
+
+h2{
+	font-weight: 700;
+	font-size: 36px;
+}
+
+.main-container{
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+.medium-container{
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+}

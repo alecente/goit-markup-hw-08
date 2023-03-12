@@ -1,0 +1,51 @@
+@import "../utils/mixins.scss";
+
+#solution{
+	color: #ffff;
+	text-align: center;
+	margin:0px;
+}
+
+.solution{
+	&__bgima{
+		padding-top: 200px;
+		padding-bottom: 200px;
+		max-width: 1600px;
+		min-height: 100%;
+		@include margin-auto();
+		background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url(../images/imagen18.jpg);
+		background-color: var(--hero-background-color);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		text-align: center;
+		color: var(--white-txt-cl);
+		padding-bottom: 210px;		
+	}
+
+
+	&__title{
+		margin-top: 0;
+		margin-bottom: 40px;
+		@include text-height-spacing-family(136%, 0.06em);
+		text-transform: uppercase;
+	}
+
+
+	&__btn{
+		display: inline-block;
+		color: #ffffff;
+		text-align: center;
+		@include text-weight-size (700, 16px);
+		padding: 10px 30px 10px 32px;
+		background-color: var(--btn-primary-bg-cl);
+		height: 50px;
+		border-radius:4px;
+		cursor:pointer;
+	}
+
+	&__btn:hover{
+		
+		box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	}
+}

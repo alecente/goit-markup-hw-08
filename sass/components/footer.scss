@@ -1,0 +1,85 @@
+#footer{
+	background-color: var(--primary-bg-cl);
+	padding-top: 60px;
+	padding-bottom: 60px;
+	line-height: 1.71;	
+	justify-content: center;
+	
+}
+
+
+.footer{
+
+		&__container{
+			display: flex;
+			justify-content: left;
+		}
+
+		&__text{
+			padding-right: 85px;
+		}
+
+		&__webstudio-logo{
+			font-family: 'raleway';
+			@include text-weight-size(700, 26px);
+			padding-right: 93px;
+			margin: 0;
+		}
+
+		&__webstudio{
+			color:var(--logo-link-txt-cl);
+			list-style: none;
+		}
+
+		&__logo{
+			margin-bottom: 6px;
+			line-height: 31px;
+			height: 31px;
+		}
+
+		&__contact{
+			@include text-weight-size(400, 14px);
+			@include text-height-spacing-family(1.71, 0.03em);
+			font-style: normal;
+			color: #ffffff;
+			padding-left: 0px;
+		}
+
+		&__mail{
+			color: rgba(255, 255, 255, 0.6);
+			padding-left: 0px;
+		}
+
+		&__join{
+			@include text-weight-size(700, 14px);
+			@include text-height-spacing-family(1.14, 0.03em);
+			text-transform: uppercase;
+			color: var(--white-txt-cl);
+			margin-bottom: 20px;
+		}
+		
+		&__icon {
+			@include w-h(20px, 20px);
+			fill: var(--white-txt-cl);
+		}
+
+		&__link {
+			@include flex-container(center, center);
+			@include w-h (44px, 44px);
+			border-radius: 50%;
+			background-color: rgba(255, 255, 255, 0.1);
+		}
+		
+		
+		&__link:hover,
+		&__link:focus {
+			background-color: var(--btn-primary-bg-cl);
+		}
+
+		&__icons-list {
+			display: flex;
+			justify-content: center;
+			column-gap: 10px;
+			padding-left: 0px;
+		}		
+}

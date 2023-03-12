@@ -1,0 +1,125 @@
+
+
+.portafolio{
+
+		&__type{
+			display: flex;
+			justify-content: center;
+			gap: 8px;
+			padding-top: 106px;
+			padding-left: 0;
+			margin-bottom: 50px;
+		}
+
+		&__btn{
+			@include text-weight-size(500, 16px);
+			@include text-height-spacing-family(1.62, 0.03em);
+			padding: 6px 24px 6px 24px;
+			background-color: var(--seconday-bg-cl);
+			height: 38px;
+			color: inherit;
+			text-transform: capitalize;
+			border:none;
+			border-radius:4px;
+			cursor:pointer;
+			text-align: center;
+			display: inline-block;
+		}
+
+
+		&__btn:hover{
+			background-color: var(--btn-primary-bg-cl);
+			color: #ffffff;
+			box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+		}
+
+		&__list{
+			max-width: 1170px;
+			grid-template-columns: repeat(3,3fr);
+			display: grid;
+			padding-left: 0;
+			grid-gap: 30px; 
+			margin: 0;
+			padding-bottom: 84px;
+		}
+
+		
+
+		&__card{
+			background-color: #ffffff;
+			border-radius: 0px 0px 4px 4px;
+			@include w-h(370px, 404px);
+			border: 1px solid #eeeeee;
+		}
+
+		&__box{
+			display: block;
+			@include w-h(100%, 294px);
+			overflow: hidden;
+			text-align: center;
+			position: relative;
+		}
+
+		&__slide-up{
+			background-color: #3dcbe8;
+			line-height: 200px;
+			color: #ffff;
+			transform: translateY(100%);
+		  }
+		  
+		
+		&__name{
+			@include text-weight-size(500);
+			@include text-height-spacing-family(19px, 0.03em);
+			padding-left: 24px;
+			padding-top: 12px; 
+		}
+
+		&__description{
+			@include text-weight-size(400);
+			@include text-height-spacing-family(19px, 0.03em);
+			color: #757575;
+			text-align: left;
+			padding-left: 24px;	
+		}
+
+		&__blue{
+			position: absolute;
+			@include w-h(100%, 100%);
+			top:1%;
+			left:0%;
+			right:0%;
+			bottom:0%;
+			background-color: rgba(33, 150, 243, 0.9);;
+			display: flex;
+			justify-content: center;
+			transition: transform 1s ease-in-out;
+			transition-timing-function: cubic-bezier(0.5, 0.1,0.1, 0.1);
+		}
+
+		&__text{
+			position: absolute;
+			@include text-weight-size (400, 18px);
+			line-height: 28px;
+			font-family: 'roboto';
+			color: #ffffff;
+			max-width: 322px;
+			-ms-flex-align: center;
+			top:12%;
+		}
+
+		&__image{
+			max-width: 370px;
+		}
+
+		&__card:hover{
+			box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+		}
+
+}
+
+.portafolio__box:hover .portafolio__slide-up {
+	transform: translateY(0);
+	
+	
+}

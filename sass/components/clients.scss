@@ -1,0 +1,41 @@
+.clients {
+   &__title{
+	@include text-weight-size(700, 36px);
+	@include text-height-spacing-family(1.16, 0.03em);
+	text-align: center;
+	text-transform: capitalize;
+	margin-top: 94px;
+	margin-bottom: 50px;
+  }
+
+  &__list{
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	margin-bottom: 94px;
+	margin-top: 0;
+	padding-left: 0px;
+  }
+  
+  &__link {
+	@include flex-container(center, center);
+	@include w-h(170px, 92px);
+	border-radius: 4px;
+	border: 1px solid var(--logo-bg-secundary);
+  }
+  
+  &__link:hover,
+  &__link:focus {
+	border: 1px solid var(--btn-primary-bg-cl);
+  }
+  &__link:hover &__logo,
+  &__link:focus &__logo {
+	fill: var(--btn-primary-bg-cl);
+  }
+
+  &__logo {
+	@include w-h(106px, 60px);
+	fill: var(--logo-bg-secundary);
+  }
+
+}
