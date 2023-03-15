@@ -1,7 +1,6 @@
 @import "../utils/mixins.scss";
 
 #header{
-	@include flex-container(center, center);
 	background-color: #ffffff;
 	padding: 24px;
 	border-bottom: 1px solid #ececec;
@@ -13,6 +12,12 @@
 }
 
 .header{
+
+	&__web{
+		display: none;		
+		@include flex-container(center, center);
+	}
+
 	&__webstudio-logo{
 		@include text-weight-size(700, 26px);
 		font-family: 'raleway';
@@ -115,3 +120,30 @@
 	background-color: var(--btn-primary-bg-cl);
 	border-radius: 2px;
   }
+
+  @media screen and (min-width:768px) {
+	#header{
+		padding: 21px;	
+	}
+	
+	.header__web{
+		justify-content: space-between;
+	}
+
+	.header__webstudio-logo{
+		padding: 0;
+	}
+
+	.header__menu{
+		padding: 0;
+	}
+
+	.header__contact{
+		display: block;
+		padding-right: 0px;
+	}
+
+	.header__contact > .header__contact1:not(:last-child){
+		padding-bottom: 10px;
+  	}
+}

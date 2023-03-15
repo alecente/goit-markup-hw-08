@@ -2,11 +2,14 @@
 
 .portafolio{
 
+		&__type-container{
+			max-width: 400px;
+			
+		}
+
 		&__type{
-			display: flex;
-			justify-content: center;
-			gap: 8px;
-			padding-top: 106px;
+						
+			padding-top: 80px;
 			padding-left: 0;
 			margin-bottom: 50px;
 		}
@@ -22,8 +25,7 @@
 			border:none;
 			border-radius:4px;
 			cursor:pointer;
-			text-align: center;
-			display: inline-block;
+			text-align: center;			
 		}
 
 
@@ -34,22 +36,19 @@
 		}
 
 		&__list{
-			max-width: 1170px;
-			grid-template-columns: repeat(3,3fr);
 			display: grid;
 			padding-left: 0;
-			grid-gap: 30px; 
 			margin: 0;
 			padding-bottom: 84px;
 		}
 
 		
-
 		&__card{
 			background-color: #ffffff;
 			border-radius: 0px 0px 4px 4px;
-			@include w-h(370px, 404px);
+			@include w-h(100%, 404px);
 			border: 1px solid #eeeeee;
+			margin-bottom: 30px;
 		}
 
 		&__box{
@@ -109,7 +108,7 @@
 		}
 
 		&__image{
-			max-width: 370px;
+			width: 100%;
 		}
 
 		&__card:hover{
@@ -119,7 +118,14 @@
 }
 
 .portafolio__box:hover .portafolio__slide-up {
-	transform: translateY(0);
-	
+	transform: translateY(0);	
+}
+
+@media screen and (min-width: 768px){
+	.portafolio__list{
+		grid-template-columns: repeat(2,3fr);
+		display: grid;
+		grid-gap: 30px;
+	}
 	
 }

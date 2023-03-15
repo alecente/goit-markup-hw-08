@@ -11,6 +11,7 @@
 @import "./components/team.scss";
 @import "./components/portafolio.scss";
 @import "./components/modalstart.scss";
+@import "./components/menubox.scss";
 @import "./utils/mixins.scss";
 @import "./utils/variables.scss";
 
@@ -47,16 +48,27 @@ h1{
 
 h2{
 	font-weight: 700;
-	font-size: 36px;
+	font-size: 28px;
 }
 
 .main-container{
-	max-width: 1600px;
+	max-width: 480px;
 	margin: 0 auto;
 }
 
 .medium-container{
-	max-width: 1170px;
+	max-width: 450px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+@media screen and (min-width: 768px){
+	.main-container{
+		max-width: 100%;
+	}
+	.medium-container{
+		max-width: 100%;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
 }

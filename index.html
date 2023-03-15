@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="Página inicial de la tarea 2" content="width=device-width, initial-scale=1.0" />
-		<title>Web studio-tarea 6</title>
+		<title>Web studio-tarea 8</title>
 		<link rel="stylesheet" type="text/css" href="./css/styles.css" />
 		<link rel="stylesheet" type="text/css" href="./css/normalize.css"/>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,36 +14,135 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
-		<!--<a href="https://alecente.github.io/goit-markup-hw-04/">Página de github</a>-->
+		<!--<a href="https://alecente.github.io/goit-markup-hw-08/">Página de github</a>-->
 	</head>
 	
 		
 		<!----------------------header---------------->
 		<body class="main-container"></body>
 		<header id="header">
-			<li class="header__webstudio">
-				<a href="#" class="header__webstudio-logo">WebStudio</a>
-			</li>
-			<nav>
-				<ul class="header__menu">
-					<li class="header__item  header__color-link"><a href=#  class="header__linked2">Estudio</a>
+			<div class="header__web">
+				<li class="header__webstudio">
+					<a href="#" class="header__webstudio-logo">WebStudio</a>
+				</li>
+				<nav>
+					<ul class="header__menu">
+						<li class="header__item  header__color-link"><a href=#  class="header__linked2">Estudio</a>
+						</li>
+						<li class="header__item"><a href="portafolio.html" class="header__linked">Portafolio</a>
+						</li>
+						<li class="header__item"><a href="contact.html"  class="header__linked">Contactos</a>
+						</li>
+					</ul>
+				</nav>
+				<ul class="header__contact">
+					<li class="header__contact1">
+						<a href="mailto:info@devstudio.com" class="header__link1"><svg class="header__icon-letter"><use href="./images/icons.svg#icon-letter"></use></svg>
+						info@devstudio.com</a>
 					</li>
-					<li class="header__item"><a href="portafolio.html" class="header__linked">Portafolio</a>
-					</li>
-					<li class="header__item"><a href="contact.html"  class="header__linked">Contactos</a>
+					<li class="header__contact1">
+						<a href="tel:+525555296000" class="header__link1"><svg class="header__icon-phone"><use href="./images/icons.svg#icon-phone"></use></svg>
+						+525555296000</a>
 					</li>
 				</ul>
+			</div>
+
+			
+			<!---header mobil-->
+			<div class="menu-box">
+				<button
+				  class="menu-toggle js-open-menu"
+				  aria-expanded="false"
+				  aria-controls="mobile-menu"
+				>
+				  <svg
+					class="menu-icons"
+					width="40px"
+					height="40px"
+					aria-label="mobile menu switch"
+				  >
+					<use
+					  class="menu-icons__cross"
+					  href="./images/icons.svg#menu-open"
+					></use>
+				  </svg>
+				</button>
+				<div class="menu-container js-menu-container" id="mobile-menu">
+				  <button
+					class="menu-toggle js-close-menu"
+					aria-expanded="false"
+					aria-controls="mobile-menu"
+				  >
+					<svg
+					  class="menu-icons"
+					  width="40px"
+					  height="40px"
+					  aria-label="mobile menu switch"
+					>
+					  <use
+						class="menu-icons__menu"
+						href="./images/icons.svg#menu-close">
+					  </use>
+					</svg>
+				  </button>
+				  <!-- container menu -->
+				  <ul class="menu-mobile-list">
+					<li class="menu-mobile-list__item">
+					  <a
+						class="menu-mobile-list__link menu-mobile-list__link--active"
+						href="./index.html"
+						>Estudio</a
+					  >
+					</li>
+					<li class="menu-mobile-list__item">
+					  <a
+						class="menu-mobile-list__link menu-mobile-list__link--active"
+						href="./portfolio.html"
+						>Portafolio</a
+					  >
+					</li>
+					<li class="menu-mobile-list__item">
+					  <a
+						class="menu-mobile-list__link menu-mobile-list__link--active"
+						href="##"
+						>Contactos</a
+					  >
+					</li>
+				  </ul>
+				  <div class="menu-contacts">
+					<a
+					  href="tel:+380961111111"
+					  class="menu-contacts__tel menu-contacts__tel--active"
+					  >+38 096 111 11 11</a
+					>
+					<a
+					  href="mailto:info@devstudio.com"
+					  class="menu-contacts__mail menu-contacts__mail--active"
+					  >info@devstudio.com</a
+					>
+					<ul class="mobile-social">
+					  <li class="mobile-social__item">
+						<a href="##" class="mobile-social__link">Instagram</a>
+						<span class="mobile-social__separator"></span>
+					  </li>
+					  <li class="mobile-social__item">
+						<a href="##" class="mobile-social__link">Twitter</a>
+						<span class="mobile-social__separator"></span>
+					  </li>
+					  <li class="mobile-social__item">
+						<a href="##" class="mobile-social__link">Facebook</a>
+						<span class="mobile-social__separator"></span>
+					  </li>
+					  <li class="mobile-social__item">
+						<a href="##" class="mobile-social__link">LinkedIn</a>
+					  </li>
+					</ul>
+				  </div>
+				</div>
+			  </div>
 			</nav>
-			<ul class="header__contact">
-				<li class="header__contact1">
-					<a href="mailto:info@devstudio.com" class="header__link1"><svg class="header__icon-letter"><use href="./images/icons.svg#icon-letter"></use></svg>
-					info@devstudio.com</a>
-				</li>
-				<li class="header__contact1">
-					<a href="tel:+525555296000" class="header__link1"><svg class="header__icon-phone"><use href="./images/icons.svg#icon-phone"></use></svg>
-					 +525555296000</a>
-				</li>
-			</ul>
+		  </div>
+
 		</header>
 		
 		
@@ -51,7 +150,7 @@
 		<main>
 			<section id="solution">
 				<div class="solution__bgima">
-					<h1 class="solution__title">Soluciones eficaces para<br>
+					<h1 class="solution__title">Soluciones eficaces para
 					tu negocio</h1>
 					<button class="solution__btn" data-modal-open> Solicita nuestro servicio </button>
 				</div>
@@ -424,10 +523,31 @@
 							</li>
 						</ul>
 					</div>
+					<div class="footer__subscribe-container">
+						<div class="footer__subscribe">
+							<h3 class="footer__subscribe-title">subscríbase al boletín informativo</h3>
+							<form class="footer__subscribe-form">
+							  <input
+								class="footer__subscribe-input"
+								type="email"
+								name="email"
+								placeholder="Correo electrónico"
+							  />
+							  <button class="footer__subscribe-submit" type="submit">
+								subcríbase
+								<svg class="footer__subscribe-icon" width="24px" height="24px">
+								  <use href="./images/icons.svg#icon-send"></use>
+								</svg>
+							  </button>
+							</form>
+						  </div>
+					</div>
 				</div>
 			</div>
 		</footer>
 
+		<!--------------js script--------------->
+		<script src="./js/mobile-menu.js"></script>
 		<script src="./js/modal.js"></script>
 	</body>
 </html>
