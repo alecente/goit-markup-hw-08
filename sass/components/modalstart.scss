@@ -117,11 +117,13 @@
  
     &__checkbox{
         position: absolute;
-        @include w-h(20px, 20px);
+        @include w-h(15px, 15px);
         border: 0;
         padding: 0;
         margin-left: 20px;
         appearance: none;
+        transform: translate(4px, 7px);
+        z-index: 100;
     }
 
     &__icon-white{
@@ -129,8 +131,9 @@
         @include w-h(16px, 10px);
         margin-left: 23px;
         margin-right: 7px;
-        border: 1px solid #212121;
-        border-radius: 2px;              
+        border: 2px solid #212121;
+        border-radius: 3px;
+        transform: translate(0px, 6px);              
     }
 
     &__checkbox--active:checked + &__icon-white {
@@ -233,5 +236,13 @@
     textarea{
         resize: none;
     }
+
+
+    @media screen and (min-width: 1200px) {
+        #modal{
+            @include w-h(528px, 581px);
+    }
+
+}
     
     

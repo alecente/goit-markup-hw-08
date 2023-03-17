@@ -41,3 +41,28 @@
 		}
 
 }
+
+@media screen and (min-width:768px) {
+	.advantages__list{
+		grid-template-columns: repeat(2,2fr);
+		grid-gap: 30px;
+		display: grid;
+		flex-basis: calc((100% - 90px) / 4);
+	}
+
+	.advantages__title{
+		justify-content: left;
+	}
+}
+
+@media screen and (min-width:1200px) {
+	#advantages{
+		padding-top: 94px;
+		padding-bottom: 94px;
+	}
+	
+	.advantages__list{
+		grid-template-columns: repeat(4,1fr);
+	}
+
+}

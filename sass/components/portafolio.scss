@@ -3,16 +3,26 @@
 .portafolio{
 
 		&__type-container{
-			max-width: 400px;
+			width: 100%;
+			height: 151px;
+			padding-bottom: 40px;
 			
 		}
 
 		&__type{
-						
-			padding-top: 80px;
-			padding-left: 0;
-			margin-bottom: 50px;
+			display: block;
+			padding-top: 60px;
+			padding-left: 15px;
+			
 		}
+
+		&__type1{
+			display: inline-flex;
+			gap: 8px;
+			margin-bottom: 21px;
+		}
+
+		
 
 		&__btn{
 			@include text-weight-size(500, 16px);
@@ -25,7 +35,7 @@
 			border:none;
 			border-radius:4px;
 			cursor:pointer;
-			text-align: center;			
+			text-align: center;
 		}
 
 
@@ -59,14 +69,7 @@
 			position: relative;
 		}
 
-		&__slide-up{
-			background-color: #3dcbe8;
-			line-height: 200px;
-			color: #ffff;
-			transform: translateY(100%);
-		  }
-		  
-		
+			
 		&__name{
 			@include text-weight-size(500);
 			@include text-height-spacing-family(19px, 0.03em);
@@ -82,6 +85,12 @@
 			padding-left: 24px;	
 		}
 
+		&__slide-up{
+			background-color: #3dcbe8;
+			color: #ffff;
+			transform: translateY(100%);
+		  }
+
 		&__blue{
 			position: absolute;
 			@include w-h(100%, 100%);
@@ -92,6 +101,7 @@
 			background-color: rgba(33, 150, 243, 0.9);;
 			display: flex;
 			justify-content: center;
+			text-align: left;			
 			transition: transform 1s ease-in-out;
 			transition-timing-function: cubic-bezier(0.5, 0.1,0.1, 0.1);
 		}
@@ -102,13 +112,15 @@
 			line-height: 28px;
 			font-family: 'roboto';
 			color: #ffffff;
-			max-width: 322px;
+			max-width: 400px;
 			-ms-flex-align: center;
 			top:12%;
+			transform: translate(0%, 20%);
 		}
 
 		&__image{
 			width: 100%;
+			transform: translate(0px, -35px);
 		}
 
 		&__card:hover{
@@ -127,5 +139,44 @@
 		display: grid;
 		grid-gap: 30px;
 	}
-	
+
+	.portafolio__type-container{
+		width: 100%;
+		height: 98px;		
+	}
+
+	.portafolio__type{
+		display: flex;
+		justify-content: center;
+		padding-top: 60px;
+	}
+
+	.portafolio__type1{
+		display: inline-flex;
+		gap: 8px;
+		margin-bottom: 21px;
+	}
+
+	.portafolio__text{
+		max-width: 306px;
+		-ms-flex-align: center;
+		top:12%;
+		transform: translate(0%, 6%);
+	}
+
+
 }
+
+ @media screen and (min-width: 1200px) {
+	.portafolio__list{
+		grid-template-columns: repeat(3,3fr);
+			display: grid;
+			padding-left: 0;
+			grid-gap: 30px; 
+	}
+
+	.portafolio__image{
+		transform: translate(0px, 0px);
+	}
+
+ }

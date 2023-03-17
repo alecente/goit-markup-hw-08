@@ -16,10 +16,10 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
 		<!--<a href="https://alecente.github.io/goit-markup-hw-08/">Página de github</a>-->
 	</head>
-	
+	<body class="main-container"></body>
 		
 		<!----------------------header---------------->
-		<body class="main-container"></body>
+		<body class="main-container">
 		<header id="header">
 			<div class="header__web">
 				<li class="header__webstudio">
@@ -50,6 +50,9 @@
 			
 			<!---header mobil-->
 			<div class="menu-box">
+				<li class="menu-box__webstudio">
+					<a href="#" class="menu-box__webstudio-logo">WebStudio</a>
+				</li>
 				<button
 				  class="menu-toggle js-open-menu"
 				  aria-expanded="false"
@@ -57,8 +60,8 @@
 				>
 				  <svg
 					class="menu-icons"
-					width="40px"
-					height="40px"
+					width="35px"
+					height="35px"
 					aria-label="mobile menu switch"
 				  >
 					<use
@@ -75,8 +78,8 @@
 				  >
 					<svg
 					  class="menu-icons"
-					  width="40px"
-					  height="40px"
+					  width="20px"
+					  height="20px"
 					  aria-label="mobile menu switch"
 					>
 					  <use
@@ -90,14 +93,14 @@
 					<li class="menu-mobile-list__item">
 					  <a
 						class="menu-mobile-list__link menu-mobile-list__link--active"
-						href="./index.html"
+						href="index.html"
 						>Estudio</a
 					  >
 					</li>
 					<li class="menu-mobile-list__item">
 					  <a
 						class="menu-mobile-list__link menu-mobile-list__link--active"
-						href="./portfolio.html"
+						href="portafolio.html"
 						>Portafolio</a
 					  >
 					</li>
@@ -474,54 +477,57 @@
 				</div>
 			  </section>
 		</main>
+		<!------------------------footer----------------->
 		<footer id="footer">
 			<div class="medium-container">
 				<div class="footer__container" class="medium-container">
-					<div class="footer__text">
-						<li class="footer__webstudio footer__webstudio-logo">
-							<a href="#" class="logo"> WebStudio</a>
-						</li>
-						<address class="footer__contact">
-							Calz. Ticomán 500, Ciudad de <br>
-							México, CDMX, México<br>
-						</address>
-						<div class="footer__mail" >
-							<a href="mailto:info@example.com">info@example.com</a>
-							<br>tel:+52 55 5529 600<br>
-						</div>
-					</div>			
-					<div class="footer__social">
-						<p class="footer__join">encuentrenos en</p>
-						<ul class="footer__icons-list">
-							<li class="footer-icons-item">
-								<a href="#" class="footer__link link">
-								<svg class="footer__icon">
-									<use href="./images/icons.svg#icon-instagram-2"></use>
-								</svg>
-								</a>
-							</li>
-							<li class="footer-icons-item">
-								<a href="#" class="footer__link link">
-								<svg class="footer__icon">
-									<use href="./images/icons.svg#icon-twitter-1"></use>
-								</svg>
-								</a>
-							</li>
-							<li class="footer-icons-item">
-								<a href="#" class="footer__link link">
-								<svg class="footer__icon">
-									<use href="./images/icons.svg#icon-facebook-1"></use>
-								</svg>
-								</a>
-							</li>
-							<li class="footer-icons-item">
-								<a href="#" class="footer__link link">
-								<svg class="footer__icon">
-									<use href="./images/icons.svg#icon-linkedin-1"></use>
-								</svg>
-								</a>
-							</li>
-						</ul>
+					<div class="footer__container-media">
+							<div class="footer__text">
+								<li class="footer__webstudio footer__webstudio-logo">
+									<a href="#" class="logo"> WebStudio</a>
+								</li>
+								<address class="footer__contact">
+									Calz. Ticomán 500, Ciudad de <br>
+									México, CDMX, México<br>
+								</address>
+								<div class="footer__mail" >
+									<a href="mailto:info@example.com">info@example.com</a>
+									<br>tel:+52 55 5529 600<br>
+								</div>
+							</div>			
+							<div class="footer__social">
+								<p class="footer__join">encuentrenos en</p>
+								<ul class="footer__icons-list">
+									<li class="footer-icons-item">
+										<a href="#" class="footer__link link">
+										<svg class="footer__icon">
+											<use href="./images/icons.svg#icon-instagram-2"></use>
+										</svg>
+										</a>
+									</li>
+									<li class="footer-icons-item">
+										<a href="#" class="footer__link link">
+										<svg class="footer__icon">
+											<use href="./images/icons.svg#icon-twitter-1"></use>
+										</svg>
+										</a>
+									</li>
+									<li class="footer-icons-item">
+										<a href="#" class="footer__link link">
+										<svg class="footer__icon">
+											<use href="./images/icons.svg#icon-facebook-1"></use>
+										</svg>
+										</a>
+									</li>
+									<li class="footer-icons-item">
+										<a href="#" class="footer__link link">
+										<svg class="footer__icon">
+											<use href="./images/icons.svg#icon-linkedin-1"></use>
+										</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
 					</div>
 					<div class="footer__subscribe-container">
 						<div class="footer__subscribe">
@@ -545,9 +551,8 @@
 				</div>
 			</div>
 		</footer>
-
-		<!--------------js script--------------->
-		<script src="./js/mobile-menu.js"></script>
-		<script src="./js/modal.js"></script>
+<!--------------js script--------------->
+<script src="./js/mobile-menu.js"></script>
+<script src="./js/modal.js"></script>
 	</body>
 </html>

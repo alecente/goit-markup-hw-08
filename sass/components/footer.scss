@@ -86,7 +86,6 @@
 		/* suscribir */
 
 		&__subscribe-container{
-			
 		}
 
 
@@ -155,4 +154,49 @@
 		align-items: center;
 		gap: 165px;
 	}
+}
+
+@media screen and (min-width:1200px) {
+	.footer__container{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.footer__container-media{
+		gap: 90px;
+	}
+
+	.footer__text{
+		text-align: left;
+	}
+
+	.footer__join{
+		text-align: left;
+	}
+
+	.footer__subscribe-container{
+		margin-left: 40px;
+		margin-top: 3px;
+	}
+
+	.footer__subscribe-form{
+		justify-content: center;
+		flex-direction: row;
+		align-items: left;
+		gap:12px;
+	}
+
+	.footer__subscribe-title{
+		text-align: left;
+	}	
+
+	.footer__subscribe-input{
+		width: 358px;
+		margin: 0;
+	}
+
+	.footer__social{
+		transform: translate(0,-24px);
+	}
+
 }

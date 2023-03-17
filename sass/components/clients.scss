@@ -18,7 +18,7 @@
   
   &__link {
 	@include flex-container(center, center);
-	@include w-h(210px, 92px);
+	@include w-h(100%, 92px);
 	border-radius: 4px;
 	border: 1px solid var(--logo-bg-secundary);
   }
@@ -36,5 +36,31 @@
 	@include w-h(106px, 60px);
 	fill: var(--logo-bg-secundary);
   }
+
+}
+
+@media screen and (min-width:768px) {
+	
+	.clients__list{
+		grid-template-columns: repeat(3,2fr);
+	}
+}
+
+@media screen and (min-width:1200px) {
+	
+	.clients__title{
+		margin-top: 94px;
+		margin-bottom: 50px;
+	}
+	
+	.clients__list{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 94px;
+	}
+	
+	.clients__link{
+		width: 170px;
+	}
 
 }

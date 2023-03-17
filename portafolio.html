@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="Página inicial de la tarea 2" content="width=device-width, initial-scale=1.0" />
-		<title>Web studio-tarea 7 - Portafolio</title>
+		<title>Web studio-tarea 8 - Portafolio</title>
 		<link rel="stylesheet" type="text/css" href="./css/styles.css" />
 		<link rel="stylesheet" type="text/css" href="./css/normalize.css"/>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,7 @@
 		
 		<!------header----------------------->
 		
-		<body class="main-container"></body>
+		<body class="main-container">
 		<header id="header">
 			<div class="header__web">
 				<li class="header__webstudio">
@@ -49,6 +49,9 @@
 
 			<!---header mobil-->
 			<div class="menu-box">
+				<li class="menu-box__webstudio">
+					<a href="#" class="menu-box__webstudio-logo">WebStudio</a>
+				</li>
 				<button
 				  class="menu-toggle js-open-menu"
 				  aria-expanded="false"
@@ -56,8 +59,8 @@
 				>
 				  <svg
 					class="menu-icons"
-					width="40px"
-					height="40px"
+					width="35px"
+					height="35px"
 					aria-label="mobile menu switch"
 				  >
 					<use
@@ -74,8 +77,8 @@
 				  >
 					<svg
 					  class="menu-icons"
-					  width="40px"
-					  height="40px"
+					  width="20px"
+					  height="20px"
 					  aria-label="mobile menu switch"
 					>
 					  <use
@@ -89,14 +92,14 @@
 					<li class="menu-mobile-list__item">
 					  <a
 						class="menu-mobile-list__link menu-mobile-list__link--active"
-						href="./index.html"
+						href="index.html"
 						>Estudio</a
 					  >
 					</li>
 					<li class="menu-mobile-list__item">
 					  <a
 						class="menu-mobile-list__link menu-mobile-list__link--active"
-						href="./portfolio.html"
+						href="portafolio.html"
 						>Portafolio</a
 					  >
 					</li>
@@ -138,21 +141,28 @@
 					</ul>
 				  </div>
 				</div>
+			  </div>
+			</nav>
+		  </div>
 
-	</header>
+		</header>
 	
 		<!-------------------portafolio----------------------->
 		<main>
 			<section id="portafolio">
 				<div class="main-container">
 					<div class="portafolio__type-container">
-                        <ul class="portafolio__type">
-						    <li><button type="button" class="portafolio__btn">todo</a></li></button>
-                            <li><button type="button" class="portafolio__btn">sitios-web</a></li></button>
-                            <li><button type="button" class="portafolio__btn">aplicaciones</a></li></button>
-                            <li><button type="button" class="portafolio__btn">diseño</a></li></button>
-                            <li><button type="button" class="portafolio__btn">marketing</a></li></button>
-                        </ul>
+                        <div class="portafolio__type">
+						    <div class="portafolio__type1">
+								<div><button type="button" class="portafolio__btn">todo</button></div>
+                            	<div><button type="button" class="portafolio__btn">sitios-web</button></div>
+                            	<div><button type="button" class="portafolio__btn">aplicaciones</button></div>
+							</div>
+							<div class="portafolio__type1">
+                            	<div><button type="button" class="portafolio__btn">diseño</button></div>
+                            	<div><button type="button" class="portafolio__btn">marketing</button></div>
+							</div>
+						</div>
 					</div>
 					<div class="medium-container">
 						<ul class="portafolio__list">
@@ -278,7 +288,7 @@
 				</div>
 			</section>
 		</main>
-		<!-------------------portafolio----------------------->
+		<!-------------------footer----------------------->
 		<footer id="footer">
 			<div class="medium-container">
 				<div class="footer__container" class="medium-container">
@@ -352,10 +362,8 @@
 				</div>
 			</div>
 		</footer>
-
 <!--------------js script--------------->
 <script src="./js/mobile-menu.js"></script>
-
-
+<script src="./js/modal.js"></script>
 	</body>
 </html>

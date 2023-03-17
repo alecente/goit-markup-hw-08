@@ -2,7 +2,7 @@
 
 #header{
 	background-color: #ffffff;
-	padding: 24px;
+	padding: 21px;
 	border-bottom: 1px solid #ececec;
 }
  
@@ -14,8 +14,9 @@
 .header{
 
 	&__web{
-		display: none;		
-		@include flex-container(center, center);
+		display: none;
+		visibility: hidden;	
+		align-items: center;
 	}
 
 	&__webstudio-logo{
@@ -32,7 +33,7 @@
 	}
 
 	&__menu{
-		@include text-weight-size(500, 14);
+		@include text-weight-size(500, 14px);
 		padding-right: 344px;
 		padding-left: 0px;
 		margin: 0;
@@ -51,7 +52,7 @@
 	}
 
 	&__contact{
-		@include text-weight-size(500, 14px);
+		@include text-weight-size(500, 12px);
 		margin: 0;
 		letter-spacing: 0.02em;
 		padding-right: 195px;
@@ -91,7 +92,7 @@
 
 .header__linked::after {
 	content: "";
-	@include position-top-left(relative, 30px, 0);
+	@include position-top-left(relative, 28px, 0);
 	bottom: 0;
 	display: block;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -109,7 +110,7 @@
 
 .header__linked2::after {
 	content: "";
-	@include position-top-left(relative, 30px, 0);
+	@include position-top-left(relative, 28px, 0);
 	bottom: 0;
 	display: block;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -123,10 +124,12 @@
 
   @media screen and (min-width:768px) {
 	#header{
-		padding: 21px;	
+		padding: 18px;	
 	}
 	
 	.header__web{
+		display: flex;
+		visibility: visible;
 		justify-content: space-between;
 	}
 
@@ -136,6 +139,8 @@
 
 	.header__menu{
 		padding: 0;
+		transform: translate(0,5px);
+		
 	}
 
 	.header__contact{
@@ -146,4 +151,34 @@
 	.header__contact > .header__contact1:not(:last-child){
 		padding-bottom: 10px;
   	}
+}
+
+@media screen and (min-width:1200px) {
+	#header{
+		padding: 24px 215px 24px 215px;	
+	}
+
+	.header__web{
+		display: flex;
+		visibility: visible;
+	}	
+	
+	.header__contact{
+		display: inline-flex;
+		font-size: 14px;
+	}
+
+	.header__contact > .header__contact1:not(:last-child){
+		padding-bottom: 0px;
+  	}
+
+	.header__webstudio-logo{
+		padding-left: 0;
+		margin: 0;
+	}
+
+	.header__menu{
+		transform: translate(-100px,5px);
+	}
+
 }
