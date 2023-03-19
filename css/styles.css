@@ -470,6 +470,11 @@
   padding-bottom: 94px;
   display: none;
 }
+@media screen and (min-width: 1200px) {
+  #function {
+    display: block;
+  }
+}
 
 .function__title {
   line-height: 42px;
@@ -506,7 +511,7 @@
 }
 
 .image1 {
-  background: url(../images/imagen1.jpg);
+  background: -webkit-image-set(url(../images/works-process1.jpg) 1x, url(../images/works-process1x2.jpg) 2x);
 }
 
 .image2 {
@@ -696,7 +701,7 @@
   padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/imagen18.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-m1x.jpg);
   background-color: var(--hero-background-color);
   background-repeat: no-repeat;
   background-position: center;
@@ -746,6 +751,31 @@
     font-size: 44px;
     width: 696px;
     line-height: 60px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .solution__bgima {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-m2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .solution__bgima {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-t1x.jpg");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .solution__bgima {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-t2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .solution__bgima {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-d1x.jpg");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .solution__bgima {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-d2x.jpg");
   }
 }
 #team {
@@ -1324,16 +1354,17 @@ textarea {
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
-  color: var(--btn-primary-cl);
+  color: #493465;
   text-decoration: none;
 }
 .menu-mobile-list__link--active:hover, .menu-mobile-list__link--active:focus {
-  color: var(--btn-primary-cl);
+  color: var(--btn-primary-bg-cl);
 }
 
 .menu-contacts {
   display: flex;
   flex-direction: column;
+  color: var(--btn-primary-bg-cl);
 }
 
 .menu-contacts__tel {
@@ -1342,7 +1373,6 @@ textarea {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.17;
-  color: var(--btn-primary-cl);
   margin-left: 40px;
   margin-top: 262px;
   text-decoration: none;
@@ -1354,7 +1384,7 @@ textarea {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.16;
-  color: var(--primary-txt-cl);
+  color: var(--secondary-txt-cl) !important;
   margin-left: 40px;
   margin-top: 32px;
   text-decoration: none;
@@ -1363,6 +1393,7 @@ textarea {
 .mobile-social {
   display: flex;
   justify-content: flex-start;
+  color: var(--btn-primary-bg-cl);
 }
 
 .mobile-social__item {
@@ -1375,7 +1406,6 @@ textarea {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
-  color: var(--btn-primary-cl);
   text-decoration: none;
 }
 .mobile-social__link__link:last-child {

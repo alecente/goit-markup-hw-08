@@ -11,7 +11,7 @@
 		padding-top: 118px;
 		padding-bottom:	118px;
 		@include margin-auto();
-		background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url(../images/imagen18.jpg);
+		background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url(../images/hero-m1x.jpg);
 		background-color: var(--hero-background-color);
 		background-repeat: no-repeat;
 		background-position: center;
@@ -22,7 +22,6 @@
 		justify-content: center;
 		flex-direction: column;
 		color: var(--white-txt-cl);
-			
 	}
 
 
@@ -69,3 +68,77 @@
 	}
 
 }
+
+
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+
+		.solution__bgima{
+			background-image: linear-gradient(
+				to right,
+				rgba(47, 48, 58, 0.4),
+				rgba(47, 48, 58, 0.4)
+				),
+				url('../images/hero-m2x.jpg');
+		}
+}
+
+@media screen and (min-width: 768px) {
+
+		.solution__bgima{
+			background-image: linear-gradient(
+			to right,
+			rgba(47, 48, 58, 0.4),
+			rgba(47, 48, 58, 0.4)
+			),
+			url('../images/hero-t1x.jpg');
+		}
+	}
+
+@media screen and (min-device-pixel-ratio: 2),
+	screen and (min-resolution: 192dpi),
+	screen and (min-resolution: 2dppx) {
+
+		.solution__bgima{
+			background-image: linear-gradient(
+				to right,
+				rgba(47, 48, 58, 0.4),
+				rgba(47, 48, 58, 0.4)
+			),
+			url('../images/hero-t2x.jpg');
+		}
+}
+
+@media screen and (min-width: 1200px) {
+
+		.solution__bgima{
+			background-image: linear-gradient(
+			to right,
+			rgba(47, 48, 58, 0.4),
+			rgba(47, 48, 58, 0.4)
+			),
+			url('../images/hero-d1x.jpg');
+		}
+}
+
+
+@media screen and (min-device-pixel-ratio: 2),
+	screen and (min-resolution: 192dpi),
+	screen and (min-resolution: 2dppx) {
+
+		.solution__bgima{
+			background-image: linear-gradient(
+			to right,
+			rgba(47, 48, 58, 0.4),
+			rgba(47, 48, 58, 0.4)
+			),
+			url('../images/hero-d2x.jpg');
+	}
+		
+}
+
+
+
+
+

@@ -3,6 +3,10 @@
 #function{
 	padding-bottom: 94px;
 	display: none;
+
+	@media screen and (min-width:1200px){
+		display:block;
+	}
 	
 }
 
@@ -44,7 +48,9 @@
 }
 
 .image1{
-	background: url(../images/imagen1.jpg);
+	background: -webkit-image-set(
+				url(../images/works-process1.jpg) 1x, 
+				url(../images/works-process1x2.jpg) 2x)
 }
 
 .image2{
@@ -54,3 +60,5 @@
 .image3{
 	background: url(../images/imagen3.jpg);
 }
+
+ 
